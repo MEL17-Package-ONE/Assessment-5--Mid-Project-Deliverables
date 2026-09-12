@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Patient Registration | Bundoora Family Clinic</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="auth-page" data-auth-page="register">
+    <div class="auth-shell">
+        <aside class="auth-side"><a class="brand" href="index.html">
+                <div class="brand-mark">BFC</div><span>Bundoora Family Clinic</span>
+            </a>
+            <h1 style="font-size:2.4rem;line-height:1.08;margin-top:48px">Secure digital care, from prescription to
+                pharmacy.</h1>
+            <p>Role-based portals for doctors, patients, pharmacists and administrators with medication tracking,
+                inventory monitoring and clinical safety support.</p>
+            <div class="feature-list">
+                <div class="feature"><span class="feature-badge">✓</span>
+                    <div>Protected role-based access</div>
+                </div>
+                <div class="feature"><span class="feature-badge">✓</span>
+                    <div>Digital prescription workflow</div>
+                </div>
+                <div class="feature"><span class="feature-badge">✓</span>
+                    <div>Audit and stock monitoring</div>
+                </div>
+            </div>
+        </aside>
+        <main class="auth-main"><span class="eyebrow">Patient Portal</span>
+            <h1>Create your Patient Account</h1>
+            <p class="muted">Register below for patient portal access. Doctor and Pharmacist staff accounts are
+                provisioned via the Admin Panel.</p>
+            <form id="registerForm" class="form-grid"><input type="hidden" name="role" value="Patient">
+                <div class="field full"><label>Full name</label><input name="full_name" placeholder="John Doe" required>
+                </div>
+                <div class="field"><label>Email address</label><input type="email" name="email"
+                        placeholder="patient@example.com" required></div>
+
+                <div class="field"><label>Date of birth</label><input type="date" name="date_of_birth"></div>
+                <div class="field"><label>Phone number</label><input name="phone" placeholder="0400 000 000"></div>
+                <div class="field full"><label>Address</label><input name="address"
+                        placeholder="123 Main St, Bundoora VIC"></div>
+                <div class="field"><label>Password</label><input type="password" name="password" minlength="8" required>
+                </div>
+                <div class="field"><label>Confirm password</label><input type="password" name="confirm_password"
+                        minlength="8" required></div>
+                <div class="field full"><button class="btn btn-primary">Register Patient Account</button></div>
+            </form>
+            <div class="panel" style="margin-top:16px;padding:12px;font-size:0.9rem"><b>Staff Notice:</b> Doctor and
+                Pharmacist accounts can only be created by an Administrator inside the Admin Panel.</div>
+            <div class="auth-links"><a href="login.html">Already have an account? Sign in</a></div>
+            <div class="status-box" id="authStatus"></div>
+        </main>
+    </div>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>
